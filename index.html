@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pomegranate Cheesecake Slider</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background-color: #fff9f5;
+    }
+    header {
+      background-color: #a62929;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .slider {
+      max-width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slide 12s infinite;
+    }
+    .slides img {
+      width: 100%;
+      height: auto;
+    }
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      33% { transform: translateX(-100%); }
+      66% { transform: translateX(-200%); }
+      100% { transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pomegranate Cheesecake Gallery</h1>
+  </header>
+  <div class="slider">
+    <div class="slides">
+      <img src="cheesecake1.jpg" alt="Classic Pomegranate Cheesecake" />
+      <img src="cheesecake2.jpg" alt="Mini Pomegranate Cheesecakes" />
+      <img src="cheesecake3.jpg" alt="No-Bake Pomegranate Cheesecake" />
+    </div>
+  </div>
+</body>
+</html>
